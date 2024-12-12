@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Index.css" type="text/css">
+    <title>eka Website</title>
+</head>
+<body>
+  <center> <h1>Selamat Datang</h1></center>
+    <meta content="">
+    <style>
+      header {
+    background: rgb(34,193,195);
+    background: linear-gradient(90deg, rgba(34,193,195,1) 0%, rgba(240,45,253,1) 100%);
+    }
+    </style>
+     <center><p>Tanggal/Waktu: <span id="tanggalwaktu"></span></p></center>
+     <center><script>
+     var tw = new Date();
+     if (tw.getTimezoneOffset() == 0) (a=tw.getTime() + ( 7 *60*60*1000))
+     else (a=tw.getTime());
+     tw.setTime(a);
+     var tahun= tw.getFullYear ();
+     var hari= tw.getDay ();
+     var bulan= tw.getMonth ();
+     var tanggal= tw.getDate ();
+     var hariarray=new Array("Minggu,","Senin,","Selasa,","Rabu,","Kamis,","Jum'at,","Sabtu,");
+     var bulanarray=new Array("Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember");
+     document.getElementById("tanggalwaktu").innerHTML = hariarray[hari]+" "+tanggal+" "+bulanarray[bulan]+" "+tahun+" Jam " + ((tw.getHours() < 10) ? "0" : "") + tw.getHours() + ":" + ((tw.getMinutes() < 10)? "0" : "") + tw.getMinutes() + (" W.I.B ");
+     </script></center>
+    <nav>
+        <a href="index(2.0).html" >Home</a> |
+        <a href="contact(2.0).html">Contact</a>|
+        <a href="about(2.0).html">About</a> |
+        <a href="biodata(2.0).html">Form Biodata</a> |
+        <a href="jadwal mata pelajaran(2.0).html"> Jadwal Mata Pelajaran</a> |
+        <a href="cv.html"> Curiculum Vitae</a> |
+        <a href="cv.pdf">Download CV</a> |
+    </nav>
+    <hr/>
+    <header style="text-align: center;">
+      <div class="video 1">
+        <style>
+        video{
+      float: center;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      width: 200px;
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+    </style>
+  <video controls src="gosling.mp4">
+  </video>
+  </div>
+        <img src="eko.jpg" width="100" height="100" style="border-radius: 100%;"/>
+        <h2>eka, S.Kom</h2>
+        <p>(Web Developer)</p>
+    </header>
+    <hr />
+    <article style="text-align: center;">
+        <h2>Overview</h2>
+        <p>
+            Hi, saya adalah web developer yang berdomisisli di Jakarta.
+            Saat ini sedang belajar HTML,CSS,dan Javascript di Smk Era Pembangunan 3 Jakarta Barat
+        </p>
+    </article>
+    <div style="max-width: 600px; margin: 3em auto">
+        <table border="1" width="100%">
+            <thead>
+                <tr>
+                    <th>Skill</th>
+                    <th>Pengalaman</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <ul>
+                            <li>HTML (Expert)</li>
+                            <li>CSS (masih pemula)</li>
+                            <li>Javascript (Beginner)</li>
+                            <li>React js (masih pemula)
+                      </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Freelancer di Internet</li>
+                            <li>Leaeder Local Linux Community</li>
+                            <li>Leaeder Local Linux Community</li>
+                            <li>Membuat link phising</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <hr>
+    <footer style="text-align: center;">
+        <p>Copyright &copy; 2023 Eko.</p>
+    </footer>
+</body>
+</html>

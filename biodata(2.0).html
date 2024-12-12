@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Index.css"
+  type="text/css">
+  <title>Biodata siswa smk era pembangunan 3</title>
+</head>
+<body>
+  <form action="thanks(2.0).html" method="post">
+  <center><h1>Pendaftaran Data Diri Siswa SMK</h1></center>
+<center><p>Tanggal/Waktu: <span id="tanggalwaktu"></span></p></center>
+     <center><script>
+     var tw = new Date();
+     if (tw.getTimezoneOffset() == 0) (a=tw.getTime() + ( 7 *60*60*1000))
+     else (a=tw.getTime());
+     tw.setTime(a);
+     var tahun= tw.getFullYear ();
+     var hari= tw.getDay ();
+     var bulan= tw.getMonth ();
+     var tanggal= tw.getDate ();
+     var hariarray=new Array("Minggu,","Senin,","Selasa,","Rabu,","Kamis,","Jum'at,","Sabtu,");
+     var bulanarray=new Array("Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember");
+     document.getElementById("tanggalwaktu").innerHTML = hariarray[hari]+" "+tanggal+" "+bulanarray[bulan]+" "+tahun+" Jam " + ((tw.getHours() < 10) ? "0" : "") + tw.getHours() + ":" + ((tw.getMinutes() < 10)? "0" : "") + tw.getMinutes() + (" W.I.B ");
+     </script></center>
+
+<script language='JavaScript'>document.write(tanggallengkap);</script>  
+  <p><center>
+    <a href="index(2.0).html">Home</a> |
+    <a href="contact(2.0).html">contact</a> |
+    <a href="about(2.0).html">about</a> |
+    <a href="biodata(2.0).html">form biodata</a> |
+    <a href="jadwal mata pelajaran(2.0).html">jadwal mata pelajaran</a> |
+    <a href="cv.html"> Curiculum Vitae</a> |
+        <a href="cv.pdf">Download CV</a> |
+   </center>
+      <fieldset>
+   <p> nama : <input type= teks></p>
+<p><label> Tanggal lahir : </label>
+                    <input type="date" name="tanggal"/>
+<p> Alamat : <input type=teks></p>
+<p> kelas : <select>
+          <option disabled selected>
+          <option>X
+          <option>XI
+          <option>XII
+          </option>
+          </select>
+<p> jurusan : <select>
+             <option disabled selected>
+             <option>TKJ
+             <option>BDP
+             <option>AKL
+             <option>DKV
+             </option>
+             </select>
+             
+<p><label>jenis kelamin : </label>
+                  <label><input type="radio" name="jenis_kelamin" value="laki-laki"/> Laki-laki</label>
+                  <label><input type="radio" name="jenis_kelamin" value="perempuan"/> perempuan</label>
+
+<p> agama : <select>
+           <option disabled selected>
+           <option>islam
+           <option>kristen
+           <option>hindu
+           <option>konghucu
+           <option>atheis
+           </option>
+           </select>
+<p> hobi : <input type=teks>
+<p>
+<input type="submit"name="submit" value"Daftar"/>
+</p>
+<footer class="footer">
+    <div class="footerContainer">
+        <p class="copyright">Copyright © 2023 By Eko</p>
+    </div>
+</footer>
+</fieldset>
+</form>
+</body>
+</html>

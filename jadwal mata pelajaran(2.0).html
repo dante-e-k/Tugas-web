@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="Index.css"
+  type="text/css">
+  <title>jadwal mata pelajaran</title>
+</head>
+<body>
+  <center><h1>jadwal mata pelajaran</h1></center>
+<center><p>Tanggal/Waktu: <span id="tanggalwaktu"></span></p></center>
+     <center><script>
+     var tw = new Date();
+     if (tw.getTimezoneOffset() == 0) (a=tw.getTime() + ( 7 *60*60*1000))
+     else (a=tw.getTime());
+     tw.setTime(a);
+     var tahun= tw.getFullYear ();
+     var hari= tw.getDay ();
+     var bulan= tw.getMonth ();
+     var tanggal= tw.getDate ();
+     var hariarray=new Array("Minggu,","Senin,","Selasa,","Rabu,","Kamis,","Jum'at,","Sabtu,");
+     var bulanarray=new Array("Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember");
+     document.getElementById("tanggalwaktu").innerHTML = hariarray[hari]+" "+tanggal+" "+bulanarray[bulan]+" "+tahun+" Jam " + ((tw.getHours() < 10) ? "0" : "") + tw.getHours() + ":" + ((tw.getMinutes() < 10)? "0" : "") + tw.getMinutes() + (" W.I.B ");
+     </script></center>
+
+<script language='JavaScript'>document.write(tanggallengkap);</script>  
+  <p><center>
+    <a href="index(2.0).html">Home</a> |
+    <a href="contact(2.0).html">contact</a> |
+    <a href="about(2.0).html">about</a> |
+    <a href="biodata(2.0).html">form biodata</a> |
+    <a href="jadwal mata pelajaran(2.0).html">jadwal mata pelajaran</a> |
+    <a href="cv.html"> Curiculum Vitae</a> |
+        <a href="cv.pdf">Download CV</a> |
+   </center>
+  <table border ="1" cellpadding="1">
+        <tr>
+            <td bgcolor ="yellow"><center> Senin </center></td>
+            <td bgcolor ="yellow"><center> Selasa </center></td>
+            <td bgcolor ="yellow"><center> Rabu </center></td>
+            <td bgcolor ="yellow"><center> Kamis </center></td>
+            <td bgcolor ="yellow"><center> Jumat </center></td>
+        </tr>
+        
+        <tr>
+            <td><center> Bhs.Arab </center></td>
+            <td><center> MTK </center></td>
+            <td><center> MTK </center></td>
+            <td><center> Bhs.Inggris </center></td>
+            <td><center> Agama </center></td>
+        </tr>
+        
+        <tr>
+        	<td><center> IPAS </center></td>
+        	<td><center> PKN </center></td>
+        	<td><center> Bhs.Inggris </center></td>
+        	<td><center> BK </center></td>
+        	<td><center> Agama </center></td>
+        </tr>
+        
+        <tr>
+        	<td bgcolor ="green"><center>istirahat</center></td>
+        	<td bgcolor ="green"><center>istirahat</center></td>
+        	<td bgcolor ="green"><center>istirahat</center></td>
+        	<td bgcolor ="green"><center>istirahat</center></td>
+        	<td bgcolor ="green"><center>istirahat</center></td>
+        </tr>
+        
+        <tr>
+      		<td><center> Bhs.Indo </center></td>
+      		<td><center> DTKJ </center></td>
+      		<td><center> IPAS </center></td>
+      		<td><center> IPAS </center></td>
+      		<td><center> Olahraga </center></td>
+      	</tr>
+    	  	<td><center> Informatika </center></td>
+   		   	<td><center> Bhs.Indo </center></td>
+      	    <td><center> Sejarah </center></td>
+      	    <td><center> Informatika </center></td>
+      	    <td><center> Olahraga </center></td>
+      	<tr>	
+     
+      		<td bgcolor ="red"><center>istirahat</center></td>
+      		<td bgcolor ="red"><center>istirahat</center></td>
+      		<td bgcolor ="red"><center>istirahat</center></td>
+      		<td bgcolor ="red"><center>istirahat</center></td>
+      		<td bgcolor ="red"><center>istirahat</center></td>
+      	</tr>
+      	
+      	<tr>
+      		<td><center> DTKJ </center></td>
+      		<td><center> Seni </center></td>
+      		<td><center> DTKJ </center></td>
+      		<td><center> DTKJ </center></td>
+      		<td><center> </center></td>
+      	</tr>
+      	
+    </table>
+    
+</body>
+</html>
